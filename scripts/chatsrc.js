@@ -23,13 +23,13 @@ function addmsg(tcontent) {
 }
 
 socket.on("message", (content) => {
-    addmsg("random user:" + content);
+    addmsg("random user: " + content);
 });
 
 io.on("connection", socket => {
-	addmsg(socket.id + " joined.");
+	addmsg(socket.id + " joined");
 
     socket.on("disconnect", () => {
-        addmsg(socket.id + " left.");
+        addmsg(socket.id + " left");
     });
 });
