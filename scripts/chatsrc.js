@@ -24,7 +24,7 @@ function addmsg(tcontent) {
 }
 
 socket.on("message", (content) => {
-    addmsg("random user: " + content);
+    addmsg("random user:", content);
 });
 
 socket.on("connect", socket => {
