@@ -26,7 +26,7 @@ socket.on("message", (content) => {
     addmsg("random user: " + content);
 });
 
-io.on("connection", socket => {
+socket.on("connect", socket => {
 	addmsg(socket.id + " joined");
 
     socket.on("disconnect", () => {
