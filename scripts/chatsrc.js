@@ -16,9 +16,10 @@ f.addEventListener("submit", function(e) {
 
 function addmsg(tcontent) {
     var item = document.createElement("li");
+	
     item.textContent = tcontent;
-
     messages.appendChild(item);
+	
     window.scrollTo(0, document.body.scrollHeight);
 }
 
