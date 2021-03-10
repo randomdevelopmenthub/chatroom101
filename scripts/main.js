@@ -7,8 +7,11 @@ var a = document.getElementById("hyperlink");
 f.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    socket.emit("create_room", socket.id);
-    a.href = "rooms/" + socket.id;
+    socket.emit("create_room", socket.id, () => {
+        a.href = "rooms/" + socket.id;
+        a.click();
+    });
     
-    a.click();
+    
+    
 });
