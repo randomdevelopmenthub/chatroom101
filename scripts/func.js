@@ -1,0 +1,1 @@
+function genid() { return `${Math.floor(Math.random() * 29)}` + `${Math.floor(Math.random() * 13)}` + `${Math.floor(Math.random() * 47)}` + `${Math.floor(Math.random() * 59)}`; };

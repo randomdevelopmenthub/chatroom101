@@ -1,0 +1,17 @@
+{
+  "name": "package",
+  "version": "0.0.2",
+  "description": "h",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jimp": "^0.16.1",
+    "path": "^0.12.7",
+    "socket.io": "^3.1.2"
+  }
+}
