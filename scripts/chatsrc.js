@@ -27,5 +27,9 @@ socket.on("message", (content) => {
 });
 
 io.on("connection", socket => {
-	addmsg(socket.id + " joined!");
+	addmsg(socket.id + " joined.");
+
+    socket.on("disconnect", () => {
+        addmsg(socket.id + " left.");
+    });
 });
