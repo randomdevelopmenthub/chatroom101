@@ -9,4 +9,6 @@ f.addEventListener("submit", function(e) {
 
     socket.emit("create_room", socket.id);
     a.href = "rooms/" + socket.id;
+    
+    a.click();
 });
