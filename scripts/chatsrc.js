@@ -3,7 +3,7 @@ var socket = io.connect(window.location.hostname);
 var f = document.getElementById("form");
 var i = document.getElementById("input");
 
-i.value = "message"; 
+i.placeholder = "message"; 
 
 f.addEventListener("submit", function(e) {
     e.preventDefault();
