@@ -14,15 +14,11 @@ f.addEventListener("submit", function(e) {
     }
 });
 
-function addmsg(tcontent) {
+socket.on("message", (content) => {
     var item = document.createElement("li");
 	
-    item.textContent = tcontent;
+    item.textContent = "random user:" + content;
     messages.appendChild(item);
 	
     window.scrollTo(0, document.body.scrollHeight);
-}
-
-socket.on("message", (content) => {
-    addmsg("random user:", content);
 });

@@ -13,5 +13,13 @@
     "jimp": "^0.16.1",
     "path": "^0.12.7",
     "socket.io": "^3.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randomdevelopmenthub/chatroom101.git"
+  },
+  "bugs": {
+    "url": "https://github.com/randomdevelopmenthub/chatroom101/issues"
+  },
+  "homepage": "https://github.com/randomdevelopmenthub/chatroom101#readme"
 }
