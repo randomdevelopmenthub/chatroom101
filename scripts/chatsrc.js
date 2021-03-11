@@ -17,7 +17,7 @@ f.addEventListener("submit", function(e) {
 socket.on("message", (content) => {
     var item = document.createElement("li");
 	
-    item.textContent = "random user:" + content;
+    item.textContent = "random user: " + content;
     messages.appendChild(item);
 	
     window.scrollTo(0, document.body.scrollHeight);
