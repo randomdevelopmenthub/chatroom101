@@ -27,10 +27,10 @@ socket.on("message", (content) => {
     addmsg("random user:", content);
 });
 
-// socket.on("connect", (socket) => {
-//     addmsg(socket.id, "joined");
+socket.on("connect", (socket) => {
+    addmsg(socket.id, "joined");
 
-//     socket.on("disconnect", () => {
-//         addmsg(socket.id + " left");
-//     });
-// });
+    socket.on("disconnect", () => {
+        addmsg(socket.id + " left");
+    });
+});
