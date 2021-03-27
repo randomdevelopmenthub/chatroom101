@@ -9,6 +9,7 @@
             #form { background: rgba(58, 58, 58, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
             #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; background-color: rgb(27, 27, 27); color: white; font-size: 15px; }
             #input2 { border: none; padding: 0 1rem; border-radius: 2rem; margin: 0.25rem; background-color: rgb(27, 27, 27); color: white; font-size: 15px; }
+            #usernameinput { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; background-color: rgb(27, 27, 27); color: white; font-size: 15px; }
             #form > button { background: rgb(27, 27, 27); border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: white; }
             #form > button:hover { border-radius: 15px; transition: 0.5s; }
             #form2 > button { background: rgb(27, 27, 27); border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: white; }
@@ -27,12 +28,12 @@
     <body>
         <ul id="messages"></ul>
         <form id="form2" action="">
-            <input id="input" autocomplete="off" maxlength="32"/><button>Change Username</button>
+            <input id="usernameinput" autocomplete="off" maxlength="32"/><button>Change Username</button>
         </form>
         <form id="form" action="">
             <input id="input" autocomplete="off" maxlength="1000"/><button>Send</button>
         </form>
     </body>
 
-    <script src="https://chatroom101.ga/scripts/chatsrc.js"></script>
+    <script src="/scripts/chatsrc.js"></script>
 </html>
