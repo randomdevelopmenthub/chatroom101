@@ -1,9 +1,11 @@
 var socket = io.connect(window.location.hostname);
 
 var f = document.getElementById("form");
+var u = document.getElementById("form2");
 var i = document.getElementById("input");
 
 i.placeholder = "message"; 
+u.placeholder = "username";
 
 f.addEventListener("submit", function(e) {
     e.preventDefault();
