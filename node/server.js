@@ -1,4 +1,5 @@
 const server = require("express")();
+const { static } = require("express");
 const func = require("../scripts/func.js");
 const http = require("http").Server(server);
 const io = require("socket.io")(http);
@@ -15,6 +16,8 @@ server.get("/", (req, res) => {
 server.get("/scripts/:file", (req, res) => {
     res.sendFile(path.join(__dirname + "/../scripts/" + req.params.file));
 });
+
+server.use('/lib', static(__dirname + '/../scripts/lib'))
 
 io.on("connection", (socket) => {
     console.log("User with socket ID " + socket.id + " has connected.");
