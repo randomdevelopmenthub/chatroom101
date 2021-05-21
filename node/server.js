@@ -41,6 +41,9 @@ io.on("connection", (socket) => {
     });
 
     socket.on("create_room", (sid, callback) => {
+        if (/.*(\/|\*).*/gi.test(sid)) {
+            return callback(null)
+        }
         server.get("/rooms/" + sid, (req, res) => {
             res.sendFile(path.join(__dirname + "/../sources/template.html"));
         });
