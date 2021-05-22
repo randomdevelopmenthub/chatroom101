@@ -41,6 +41,9 @@ io.on("connection", (socket) => {
     });
 
     socket.on("create_room", (sid, callback) => {
+        if (!callback || typeof callback !== 'function') {
+            return false;
+        }
         if (/.*(\/|\*).*/gi.test(sid)) {
             return callback(null)
         }
